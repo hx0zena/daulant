@@ -136,13 +136,40 @@
 }
 
 
-/* Dark mode overrides */
-@media (prefers-color-scheme: dark) {
-  :root { --dl-color-scheme: dark; }
+[data-theme="dark"],
+.dl-dark {
+  --dl-bg-base:    #1e1f1e;
+  --dl-bg-panel:   #252625;
+  --dl-bg-card:    #2c2e2c;
+  --dl-bg-sunken:  #191a19;
+  --dl-bg-hover:   rgba(159,184,173,.08);
+  --dl-bg-active:  rgba(159,184,173,.14);
+  --dl-bg-selected: rgba(159,184,173,.12);
+
+  --dl-border:         #363836;
+  --dl-border-strong:  #454745;
+  --dl-border-accent:  var(--dl-ash);
+
+  --dl-text-primary:   #dce0dc;
+  --dl-text-secondary: #9aaa98;
+  --dl-text-muted:     #6a7a68;
+  --dl-text-on-accent: #1e1f1e;
+  --dl-text-link:      #9fb8ad;
+
+  --dl-accent:         var(--dl-ash);
+  --dl-accent-hover:   #b5ccbf;
+  --dl-accent-active:  #c5d8cc;
+
+  --dl-success:    #5a9b5a;
+  --dl-warning:    #b89040;
+  --dl-danger:     #b85050;
+  --dl-info:       #4a8aaa;
+  --dl-success-bg: #1a2e1a;
+  --dl-warning-bg: #2a2210;
+  --dl-danger-bg:  #2e1a1a;
+  --dl-info-bg:    #12222e;
 }
 
-[data-theme="dark"],
-.dl-dark,
 @media (prefers-color-scheme: dark) {
   :root {
     --dl-bg-base:    #1e1f1e;
@@ -1152,4 +1179,3 @@ hr {
 .dl-opacity-0  { opacity: 0; }
 .dl-opacity-50 { opacity: .5; }
 .dl-opacity-100 { opacity: 1; }
-ity: 1; }
